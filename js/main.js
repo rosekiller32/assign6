@@ -42,7 +42,7 @@ $("#signin").click(function () {
       data["/users/"+uid+"/photo"]= currentUser.photoURL;
       firebase.database().ref().update(data);
       logginOption(true);
-      location.reload();
+    //   location.reload();
   }).catch(function (error) {
     var errorCode = error.code;
     var errorMessa = error.message;
